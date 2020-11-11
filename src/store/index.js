@@ -3,7 +3,7 @@ import Vuex from "vuex";
 import axios from "axios";
 
 Vue.use(Vuex);
-const api = "https://credere-frontend-test.netlify.app/db.json"
+const api = "http://localhost:3000"
 
 export default new Vuex.Store({
   state: {
