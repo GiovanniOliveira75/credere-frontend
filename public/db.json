@@ -1,0 +1,158 @@
+{
+  "customer": [
+    {
+      "id": 123,
+      "name": "Enzo dos Santos",
+      "birthday": "31/12/1991",
+      "driver_license": {
+        "id": 24,
+        "number": "642123",
+        "issued_at": "31/12/2017"
+      },
+      "state": "RN",
+      "city": "Natal",
+      "phones": [
+        {
+          "id": 37,
+          "code": "99",
+          "number": "99999-9999"
+        },
+        {
+          "id": 38,
+          "code": "88",
+          "number": "88888-8888"
+        }
+      ],
+      "emails": [
+        {
+          "id": 21,
+          "address": "enzo@dos-sant.os"
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "Giovanni Oliveira",
+      "birthday": "1999-03-26",
+      "driver_license": {
+        "number": "8723644923-49",
+        "issued_at": "2020-03-26"
+      },
+      "state": "RN",
+      "city": "Parnamirim",
+      "phones": [
+        {
+          "code": "84",
+          "number": "98152-6810",
+          "main": true
+        },
+        {
+          "code": "84",
+          "number": "98131-2998",
+          "main": false
+        }
+      ],
+      "emails": [
+        {
+          "address": "giovanni-g@hotmail.com"
+        },
+        {
+          "address": "giovanni.oliveira75@gmail.com"
+        }
+      ],
+      "parent": {
+        "name": "",
+        "phone": {
+          "code": "",
+          "number": ""
+        }
+      },
+      "id": 124
+    },
+    {
+      "name": "Samuel dos Santos",
+      "birthday": "2005-01-01",
+      "driver_license": {
+        "number": "",
+        "issued_at": ""
+      },
+      "state": "ES",
+      "city": "Serra",
+      "phones": [
+        {
+          "code": "27",
+          "number": "18293-8123",
+          "main": true
+        },
+        {
+          "code": "27",
+          "number": "12837-1928",
+          "main": false
+        },
+        {
+          "code": "27",
+          "number": "12938-7192",
+          "main": false
+        },
+        {
+          "code": "27",
+          "number": "19283-7192",
+          "main": false
+        }
+      ],
+      "emails": [
+        {
+          "address": "samueldossantos@email.com"
+        },
+        {
+          "address": "samuel@email.com"
+        },
+        {
+          "address": "samuel@gmail.com"
+        }
+      ],
+      "parent": {
+        "name": "Giovanni",
+        "phone": {
+          "code": "84",
+          "number": "81231-9231"
+        }
+      },
+      "id": 125
+    }
+  ],
+  "slides": [
+    {
+      "id": 1,
+      "title": "Lorem ipsum dolor",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu dolor, posuere eget pretium non, ullamcorper ut est. Vivamus at semper dui. Duis pretium lectus ut eros tincidunt, quis tristique urna lacinia.",
+      "image": "https://cdn.vuetifyjs.com/images/cards/house.jpg",
+      "layoutType": 1
+    },
+    {
+      "id": 2,
+      "title": "Lorem ipsum dolor",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu dolor, posuere eget pretium non, ullamcorper ut est. Vivamus at semper dui. Duis pretium lectus ut eros tincidunt, quis tristique urna lacinia.",
+      "image": "https://cdn.vuetifyjs.com/images/cards/road.jpg",
+      "layoutType": 2
+    },
+    {
+      "id": 3,
+      "title": "Lorem ipsum dolor",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu dolor, posuere eget pretium non, ullamcorper ut est. Vivamus at semper dui. Duis pretium lectus ut eros tincidunt, quis tristique urna lacinia.",
+      "image": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+      "layoutType": 3
+    },
+    {
+      "id": 4,
+      "title": "Lorem ipsum dolor",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu dolor, posuere eget pretium non, ullamcorper ut est. Vivamus at semper dui. Duis pretium lectus ut eros tincidunt, quis tristique urna lacinia.",
+      "image": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+      "layoutType": 4
+    }
+  ]
+}
