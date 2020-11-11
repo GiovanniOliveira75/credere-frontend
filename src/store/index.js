@@ -3,7 +3,10 @@ import Vuex from "vuex";
 import axios from "axios";
 
 Vue.use(Vuex);
-const api = "http://localhost:3000"
+//Dev URL
+//const api = "http://localhost:3000"
+//Production URL
+const api = "https://my-json-server.typicode.com/GiovanniOliveira75/credere-frontend"
 
 export default new Vuex.Store({
   state: {
