@@ -3,6 +3,7 @@ import Vuex from "vuex";
 import axios from "axios";
 
 Vue.use(Vuex);
+const api = "https://credere-frontend-test.netlify.app/db.json"
 
 export default new Vuex.Store({
   state: {
@@ -23,28 +24,28 @@ export default new Vuex.Store({
   },
   actions: {
     async showCustomer({ commit }) {
-      const { data } = await axios.get("http://localhost:3000/customer");
+      const { data } = await axios.get(`${api}/customer`);
 
       commit("mutateCustomer", data);
     },
 
     async updateCustomer({ state }, data) {
-      const response = await axios.put(`http://localhost:3000/customer/${data.id}`, data);
+      const response = await axios.put(`${api}/customer/${data.id}`, data);
       state.showCustomer.push(response.data);
     },
 
     async createCustomer({ state }, data) {
-      const response = await axios.post("http://localhost:3000/customer", data);
+      const response = await axios.post(`${api}/customer`, data);
       state.showCustomer.push(response.data);
     },
 
     async showSlide({ commit }) {
-      const { data } = await axios.get("http://localhost:3000/slides");
+      const { data } = await axios.get(`${api}/slides`);
       commit("mutateSlide", data);
     },
 
     async createSlide({ state }, data) {
-      const response = await axios.post("http://localhost:3000/slides", data);
+      const response = await axios.post(`${api}/slides`, data);
       state.showSlide.push(response.data);
     },
   }
