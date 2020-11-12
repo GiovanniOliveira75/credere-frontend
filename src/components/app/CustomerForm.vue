@@ -351,7 +351,6 @@ export default {
     getCustomer(value) {
       //const objKey = Object.keys(value)
       Array.from(value).forEach(customer => {
-        console.log(customer);
         if (customer.birthday) {
           this.customer.birthday = customer.birthday;
         }
