@@ -43,8 +43,10 @@ ou
 $ yarn
 ```
 
-3 - "Descomente" a variável com a url da api de desenvolvimento e comente a de produção
+3 - "Descomente" a variável com a url da api de desenvolvimento e comente a de produção, no arquivo scr/store/index.js
 ```javascript
+/* scr/store/index.js */
+
 //Dev URL
 // const api = "http://localhost:3000";
 
