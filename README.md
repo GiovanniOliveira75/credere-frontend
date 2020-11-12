@@ -1,7 +1,7 @@
 # Credere Teste Front-end
 
 [Tecnologias](#hammer-tecnologias) | 
-[Executando o projeto](#cloud-backend)
+[Executando o projeto](#computer-executando-o-projeto)
 
 ---
 
