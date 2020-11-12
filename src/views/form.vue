@@ -5,6 +5,7 @@
     <v-sheet class="my-5">
       <CustomerForm />
 
+      <h2 class="secondary--text mt-16 mb-2">Listagem de Clientes</h2>
       <v-row>
         <v-col
           cols="12"
@@ -28,7 +29,7 @@ export default {
   name: "FormView",
   components: {
     CustomerForm,
-    CustomerCard
+    CustomerCard,
   },
   mounted() {
     this.$nextTick(() => {
@@ -36,12 +37,12 @@ export default {
     });
   },
   computed: {
-    ...mapGetters(["getCustomer"])
+    ...mapGetters(["getCustomer"]),
   },
   methods: {
     ...mapActions({
-      show: "showCustomer"
-    })
-  }
+      show: "showCustomer",
+    }),
+  },
 };
 </script>
