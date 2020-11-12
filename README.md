@@ -15,6 +15,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [JSON server](https://github.com/typicode/json-server)
 
 
+## :cloud: Deploy
+
+Esse projeto foi configurado para deploy automático no netlify.
+Pode conferir no link:
+[https://credere-frontend-test.netlify.app/](https://credere-frontend-test.netlify.app/)
+
+
 ## :computer: Executando o projeto
 
 ```bash
