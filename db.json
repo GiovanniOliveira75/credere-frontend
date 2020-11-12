@@ -29,7 +29,13 @@
           "address": "enzo@dos-sant.os"
         }
       ],
-      "parent": null
+      "parent": {
+        "name": "",
+        "phone": {
+          "code": "",
+          "number": ""
+        }
+      }
     },
     {
       "name": "Giovanni Oliveira",
