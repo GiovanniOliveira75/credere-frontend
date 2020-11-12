@@ -110,8 +110,8 @@
 <script>
 export default {
   props: {
-    customer: Object,
-  },
+    customer: Object
+  }
 };
 </script>
 

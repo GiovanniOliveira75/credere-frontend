@@ -221,7 +221,7 @@
           <v-col cols="12" md="6">
             <v-text-field
               v-model="customer.parent.name"
-              :rules="[(v) => !!v || 'O campo Nome é obrigatório']"
+              :rules="[v => !!v || 'O campo Nome é obrigatório']"
               label="Nome"
               placeholder="Nome do responsável"
               filled
@@ -286,7 +286,7 @@ export default {
   name: "CustomerForm",
   components: {
     ValidationObserver,
-    ValidationProvider,
+    ValidationProvider
   },
   data: () => ({
     customer: {
@@ -294,7 +294,7 @@ export default {
       birthday: "",
       driver_license: {
         number: "",
-        issued_at: "",
+        issued_at: ""
       },
       state: "",
       city: "",
@@ -302,21 +302,21 @@ export default {
         {
           code: "",
           number: "",
-          main: true,
-        },
+          main: true
+        }
       ],
       emails: [
         {
-          address: "",
-        },
+          address: ""
+        }
       ],
       parent: {
         name: "",
         phone: {
           code: "",
-          number: "",
-        },
-      },
+          number: ""
+        }
+      }
     },
 
     loading: false,
@@ -327,7 +327,7 @@ export default {
     states: [],
     cities: [],
     limitPhones: 1,
-    limitEmails: 1,
+    limitEmails: 1
   }),
 
   mounted() {
@@ -350,24 +350,24 @@ export default {
     },
     getCustomer(value) {
       //const objKey = Object.keys(value)
-      Array.from(value).forEach((customer) => {
+      Array.from(value).forEach(customer => {
         console.log(customer);
         if (customer.birthday) {
           this.customer.birthday = customer.birthday;
         }
       });
-    },
+    }
   },
 
   computed: {
-    ...mapGetters(["getCustomer"]),
+    ...mapGetters(["getCustomer"])
   },
 
   methods: {
     ...mapActions({
       show: "showCustomer",
       update: "updateCustomer",
-      create: "createCustomer",
+      create: "createCustomer"
     }),
 
     submit() {
@@ -391,7 +391,7 @@ export default {
           return 0;
         });
 
-        this.states = data.map((state) => state.sigla);
+        this.states = data.map(state => state.sigla);
       }
     },
     async getCities(stateId) {
@@ -410,7 +410,7 @@ export default {
           return 0;
         });
 
-        this.cities = data.map((city) => city.nome);
+        this.cities = data.map(city => city.nome);
       }
     },
     querySelectionStates() {
@@ -434,7 +434,7 @@ export default {
         this.customer.phones.push({
           code: "",
           number: "",
-          main: false,
+          main: false
         });
       }
 
@@ -445,7 +445,7 @@ export default {
 
       if (totalLines < 3) {
         this.customer.emails.push({
-          address: "",
+          address: ""
         });
       }
       this.limitEmails = totalLines + 1;
@@ -463,8 +463,8 @@ export default {
     },
     handleEmailList(index) {
       return index > 0 ? this.removeEmailLine(index) : this.pushNewEmailLine();
-    },
-  },
+    }
+  }
 };
 </script>
 

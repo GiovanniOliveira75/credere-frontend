@@ -2,11 +2,16 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
 
+/*
+ * Criada a store para gerenciar os estados dos dados de clientes e dos slides.
+ * Dessa forma os dados podem ser facilmente geridos em todo o sistema
+ **/
+
 Vue.use(Vuex);
 //Dev URL
-const api = "http://localhost:3000"
+// const api = "http://localhost:3000";
 //Production URL
-//const api = "https://my-json-server.typicode.com/GiovanniOliveira75/credere-frontend"
+const api = "https://my-json-server.typicode.com/GiovanniOliveira75/credere-frontend"
 
 export default new Vuex.Store({
   state: {
@@ -50,6 +55,6 @@ export default new Vuex.Store({
     async createSlide({ state }, data) {
       const response = await axios.post(`${api}/slides`, data);
       state.showSlide.push(response.data);
-    },
+    }
   }
 });
