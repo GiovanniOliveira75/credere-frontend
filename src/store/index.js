@@ -8,8 +8,10 @@ import axios from "axios";
  **/
 
 Vue.use(Vuex);
+
 //Dev URL
 // const api = "http://localhost:3000";
+
 //Production URL
 const api =
   "https://my-json-server.typicode.com/GiovanniOliveira75/credere-frontend";
